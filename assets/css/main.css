@@ -21,6 +21,11 @@ section, summary, time, mark, audio, video {
 
 /* Basic */
 
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;}
+
+
 
 /* Style buttons */
 .btn {
@@ -37,6 +42,56 @@ section, summary, time, mark, audio, video {
   background-color: RoyalBlue;
 }
 
+/* Style buttons */
+.btn1 {
+  background-color: RoyalBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn1:hover {
+  background-color: RoyalBlue;
+  color: white !important;
+}
+
+/* Style buttons */
+.btn2 {
+  background-color: RoyalBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn2:hover {
+  color: white !important;
+  background-color: RoyalBlue;
+}
+
+
+/* Style buttons */
+.btn3 {
+  background-color: lightblue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn3:hover {
+	color: white !important;
+  background-color: lightblue ;
+}
+
+
 	
 	body{
 		font-family: 'Open Sans', sans-serif;
@@ -47,7 +102,7 @@ section, summary, time, mark, audio, video {
 	}
 
 		a:hover {
-			color: #43bff0 !important;
+			color: red ;
 		}
 
 		a img {
@@ -56,7 +111,7 @@ section, summary, time, mark, audio, video {
 
 	b, strong {
 		font-weight: 600;
-		color: #3e3e3e;
+		color: white;
 	}
 
 	i, em {
@@ -94,11 +149,11 @@ section, summary, time, mark, audio, video {
 	h1 {
 		font-size: 3.25em;
 		letter-spacing: -0.025em;
-		font-weight: 300;
+		font-weight: 900;
 	}
 
 		h1 strong {
-			font-weight: 700;
+			font-weight: 1000;
 		}
 
 	h2 {
@@ -131,6 +186,73 @@ section, summary, time, mark, audio, video {
 			font-size: 1.25em;
 			margin: 0;
 		}
+
+
+
+/* Nav */
+
+	#nav {
+		background-color: #282828;
+		text-align: center;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: 10000;
+		cursor: default;
+		height: 3.5em;
+		line-height: 3.5em;
+	}
+
+		#nav ul {
+			margin-bottom: 0;
+			list-style: none;
+			padding-left: 0;
+		}
+
+		#nav li {
+			display: inline-block;
+			padding-left: 0;
+		}
+
+		#nav a {
+			-moz-transition: background-color .2s ease-in-out;
+			-webkit-transition: background-color .2s ease-in-out;
+			-ms-transition: background-color .2s ease-in-out;
+			transition: background-color .2s ease-in-out;
+			position: relative;
+			display: block;
+			color: #fff;
+			text-decoration: none;
+			outline: 0;
+			font-weight: 600;
+			border-radius: 8px;
+			color: #fff;
+			height: 2.5em;
+			line-height: 2.5em;
+			padding: 0 1.25em;
+		}
+
+			#nav a:hover {
+				color: #fff !important;
+				background: #383838;
+			}
+
+			#nav a.active {
+				background: #484848;
+			}
+
+				#nav a.active:before {
+					content: '';
+					display: block;
+					position: absolute;
+					bottom: -0.6em;
+					left: 50%;
+					margin-left: -0.75em;
+					border-left: solid 0.75em transparent;
+					border-right: solid 0.75em transparent;
+					border-top: solid 0.6em #282828;
+				}
 
 
 /* Container */
@@ -1527,6 +1649,25 @@ section, summary, time, mark, audio, video {
 			margin-bottom: 10px;
 		}
 
+/* Nav */
+
+			#nav {
+				height: 44px;
+				line-height: 44px;
+			}
+
+				#nav a {
+					padding: 0 0.75em;
+					height: inherit;
+					line-height: inherit;
+					border-radius: 0;
+				}
+
+					#nav a:hover {
+						background-color: transparent;
+					}
+
+
 /* Icons */
 
 
@@ -1541,18 +1682,26 @@ section, summary, time, mark, audio, video {
 	}
 
 		.wrapper.style1 {
-			background-image: none;
-			background-color: #fff;
+			background-image: url("C:/Users/JackDaniel/Desktop/portfolio/images/picbody3.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
 		}
 
 		.wrapper.style2 {
-			background-color: #fafafa;
-			text-shadow: 1px 1px 0px #fff;
+				background-image: url("C:/Users/JackDaniel/Desktop/portfolio/images/picbody3.jpg");
+		text-shadow: 1px 1px 0px #fff;
+		background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
 		}
 
 		.wrapper.style3 {
-			background-color: #f4f4f4;
+			background-image: url("C:/Users/JackDaniel/Desktop/portfolio/images/picbody3.jpg");
 			text-shadow: 1px 1px 0px #fff;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
 		}
 
 		.wrapper.style4 {
@@ -1742,9 +1891,6 @@ section, summary, time, mark, audio, video {
 
 				.box .image.featured {
 					position: relative;
-					left: 20px;
-					top: 20px;
-					margin: -50px 0 50px -40px;
 					width: auto;
 				}
 
@@ -1752,12 +1898,15 @@ section, summary, time, mark, audio, video {
 					max-width: 32em;
 					margin-left: auto !important;
 					margin-right: auto !important;
+					height: auto !important;
+
 				}
 
 				.box.style2 {
 					max-width: 32em;
 					margin-left: auto !important;
 					margin-right: auto !important;
+					height: auto !important;
 				}
 
 		/* Wrappers */
@@ -1774,15 +1923,16 @@ section, summary, time, mark, audio, video {
   padding: 17px 0 18px 0;
   border-top: 1px solid #000;
   text-align: center;
- 
   bottom: 0px;
 }
-footer a {
-  color: #999;
+
+.buttn {
+    display: flex !important;
+    align-self: auto;
+	align-items:  auto center !important;
+	justify-content: center !important;
 }
-footer a:hover {
-  color: #efefef;
-}
+
 
 
 @media (max-width: 767px) {
@@ -1794,5 +1944,5 @@ footer a:hover {
 }
 
 .container {
-  max-width: 100%;
+  max-width: 99%;
 }
