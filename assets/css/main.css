@@ -1682,14 +1682,14 @@ footer, header, hgroup, menu, nav, section {
 	}
 
 		.wrapper.style1 {
-			background-image: url("https://github.com/JackD027/PORTFOLIO/blob/master/images/picbody3.jpg");
+			background-image: url("PORTFOLIO/images/picbody3.jpg");
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
 		}
 
 		.wrapper.style2 {
-				background-image: url("https://github.com/JackD027/PORTFOLIO/blob/master/images/picbody3.jpg");
+				background-image: url("PORTFOLIO/images/picbody3.jpg");
 		text-shadow: 1px 1px 0px #fff;
 		background-repeat: no-repeat;
 			background-size: cover;
@@ -1697,7 +1697,7 @@ footer, header, hgroup, menu, nav, section {
 		}
 
 		.wrapper.style3 {
-			background-image: url("https://github.com/JackD027/PORTFOLIO/blob/master/images/picbody3.jpg");
+			background-image: url("PORTFOLIO/images/picbody3.jpg");
 			text-shadow: 1px 1px 0px #fff;
 			background-repeat: no-repeat;
 			background-size: cover;
