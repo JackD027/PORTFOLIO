@@ -1675,21 +1675,21 @@ footer, header, hgroup, menu, nav, section {
 /* Wrappers */
 
 	.wrapper {
-		background-image: url("images/bg.png");
+		background-image: black;
 		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		padding: 8em 0 8em 0;
 		text-align: center;
 	}
 
 		.wrapper.style1 {
-			background-image: url("C:/Users/JackDaniel/Desktop/portfolio/images/picbody3.jpg");
+			background-image:black;
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
 		}
 
 		.wrapper.style2 {
-				background-image: url("C:/Users/JackDaniel/Desktop/portfolio/images/picbody3.jpg");
+				background-image: black;
 		text-shadow: 1px 1px 0px #fff;
 		background-repeat: no-repeat;
 			background-size: cover;
@@ -1697,7 +1697,7 @@ footer, header, hgroup, menu, nav, section {
 		}
 
 		.wrapper.style3 {
-			background-image: url("C:/Users/JackDaniel/Desktop/portfolio/images/picbody3.jpg");
+			background-image: black;
 			text-shadow: 1px 1px 0px #fff;
 			background-repeat: no-repeat;
 			background-size: cover;
